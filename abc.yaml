@@ -1,0 +1,9 @@
+---
+ - name: Build Docker image
+   hosts: local host
+   tasks:
+    - name: Build Docker image
+      docker_image:
+        name: image
+        tag: latest
+        path: .
